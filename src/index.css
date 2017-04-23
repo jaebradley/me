@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.contact-icon {
+  margin: 0px 10px 0px 10px;
+}
+
+.contact-bar {
+  text-align: center;
+}
+
+.page-header {
+  text-align: center;
+}
