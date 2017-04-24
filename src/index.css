@@ -1,15 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  font-style: normal;
+	font-variant: normal;
 }
 
-.contact-icon {
-  margin: 0px 10px 0px 10px;
+.about-description {
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-.contact-bar {
-  text-align: center;
+.about-image {
+  display: block;
+  margin: auto;
 }
 
 .page-header {
