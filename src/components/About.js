@@ -2,9 +2,13 @@ import React, { Component } from 'react';
 import { PageHeader, Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
 import ContactBar from './ContactBar';
 import JaeImage from '../images/jae.png';
+import Menu from './Menu';
 
 class About extends Component {
-    render = () => (
+
+  render = () => (
+    <div>
+      <Menu />
       <Grid>
         <Row>
           <Col xsHidden md={4} />
@@ -46,7 +50,9 @@ class About extends Component {
           <ContactBar />
         </Row>
       </Grid>
-    );
+
+    </div>
+  );
 }
 
 export default About;

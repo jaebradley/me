@@ -26,16 +26,16 @@ class ContactBar extends Component {
           <Col xs={12} md={3}>
             <Thumbnail
               target="_blank"
-              href="mailto:jae.b.bradley@gmail.com"
-              src={GmailImage}
-              alt="Gmail" />
-          </Col>
-          <Col xs={12} md={3}>
-            <Thumbnail
-              target="_blank"
               href="https://twitter.com/jaebradley"
               src={TwitterImage}
               alt="Twitter" />
+            </Col>
+          <Col xs={12} md={3}>
+            <Thumbnail
+              target="_blank"
+              href="mailto:jae.b.bradley@gmail.com"
+              src={GmailImage}
+              alt="Gmail" />
           </Col>
         </Col>
         <Col xsHidden md={4} />
