@@ -5,11 +5,15 @@ import {
 } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
+import Projects from './components/Projects';
 
 class App extends Component {
   render = () => (
     <Router>
-      <Route path="/about" component={About}/>
+      <div>
+        <Route path="/about" component={About}/>
+        <Route path="/projects" component={Projects}/>
+      </div>
     </Router>
   );
 }

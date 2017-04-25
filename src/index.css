@@ -67,3 +67,19 @@ body {
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
+
+.project-image {
+  max-height: 500px;
+  max-width: 500px;
+  display: block;
+  margin: auto;
+}
+
+.project-title {
+  text-align: center;
+}
+
+.project-details img {
+  max-height: 100%;
+  max-width: 100%;
+}
