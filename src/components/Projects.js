@@ -43,19 +43,16 @@ class Projects extends Component {
             <ListGroup className="project-descriptions">
               <Project
                 src={UberCliImage}
-                className="project-image"
                 title="Uber CLI"
                 body={this.fetchHtml(this.uberCliReadmeUrl)}
                 rounded />
               <Project
                 src={NbaCliImage}
-                className="project-image"
                 title="NBA CLI"
                 body={this.fetchHtml(this.nbaCliReadmeUrl)}
                 rounded />
               <Project
                 src={AtomifyGif}
-                className="project-image"
                 title="Atomify"
                 body={this.fetchHtml(this.atomifyReadmeUrl)}
                 rounded />
