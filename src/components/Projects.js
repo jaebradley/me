@@ -4,6 +4,7 @@ import rp from 'request-promise';
 import showdown from 'showdown';
 
 import Project from './Project';
+import CenteredPageHeader from './CenteredPageHeader';
 
 import UberCliImage from '../images/uber-cli.png';
 import NbaCliImage from '../images/nba-cli.png';
@@ -28,15 +29,7 @@ class Projects extends Component {
 
   render = () => (
       <Grid>
-        <Row>
-          <Col xsHidden md={4} />
-          <Col xs={6} md={4}>
-            <PageHeader className="page-header">
-              Projects
-            </PageHeader>
-          </Col>
-          <Col xsHidden md={4} />
-        </Row>
+        <CenteredPageHeader header={"Projects"} />
         <Row>
           <Col xs={6} md={1} />
           <Col xs={6} md={10}>
@@ -57,7 +50,7 @@ class Projects extends Component {
                 body={this.fetchHtml(this.atomifyReadmeUrl)}
                 rounded />
               </ListGroup>
-            </Col>
+          </Col>
           <Col xs={6} md={1} />
         </Row>
       </Grid>

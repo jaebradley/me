@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { PageHeader, Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
+import CenteredPageHeader from './CenteredPageHeader';
 import ContactBar from './ContactBar';
 import JaeImage from '../images/jae.png';
 import Menu from './Menu';
@@ -8,15 +9,7 @@ class About extends Component {
 
   render = () => (
     <Grid>
-      <Row>
-        <Col xsHidden md={4} />
-        <Col xs={6} md={4}>
-          <PageHeader className="page-header">
-            About
-          </PageHeader>
-        </Col>
-        <Col xsHidden md={4} />
-      </Row>
+      <CenteredPageHeader header={"About"} />
       <Row>
         <Col xsHidden md={4} />
         <Col xs={6} md={4}>
