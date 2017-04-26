@@ -3,7 +3,6 @@ import { PageHeader, Grid, Row, Col, ListGroup } from 'react-bootstrap';
 import rp from 'request-promise';
 import showdown from 'showdown';
 
-import Menu from './Menu';
 import Project from './Project';
 
 import UberCliImage from '../images/uber-cli.png';
@@ -28,40 +27,43 @@ class Projects extends Component {
   }
 
   render = () => (
-    <div>
-      <Menu />
-      <PageHeader className="page-header">
-        Projects
-      </PageHeader>
       <Grid>
+        <Row>
+          <Col xsHidden md={4} />
+          <Col xs={6} md={4}>
+            <PageHeader className="page-header">
+              Projects
+            </PageHeader>
+          </Col>
+          <Col xsHidden md={4} />
+        </Row>
         <Row>
           <Col xs={6} md={1} />
           <Col xs={6} md={10}>
             <ListGroup className="project-descriptions">
               <Project
-                  src={UberCliImage}
-                  className="project-image"
-                  title="Uber CLI"
-                  body={this.fetchHtml(this.uberCliReadmeUrl)}
-                  rounded />
+                src={UberCliImage}
+                className="project-image"
+                title="Uber CLI"
+                body={this.fetchHtml(this.uberCliReadmeUrl)}
+                rounded />
               <Project
-                    src={NbaCliImage}
-                    className="project-image"
-                    title="NBA CLI"
-                    body={this.fetchHtml(this.nbaCliReadmeUrl)}
-                    rounded />
+                src={NbaCliImage}
+                className="project-image"
+                title="NBA CLI"
+                body={this.fetchHtml(this.nbaCliReadmeUrl)}
+                rounded />
               <Project
-                  src={AtomifyGif}
-                  className="project-image"
-                  title="Atomify"
-                  body={this.fetchHtml(this.atomifyReadmeUrl)}
-                  rounded />
-            </ListGroup>
-          </Col>
+                src={AtomifyGif}
+                className="project-image"
+                title="Atomify"
+                body={this.fetchHtml(this.atomifyReadmeUrl)}
+                rounded />
+              </ListGroup>
+            </Col>
           <Col xs={6} md={1} />
         </Row>
       </Grid>
-    </div>
   );
 }
 
