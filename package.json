@@ -9,6 +9,7 @@
     "react-bootstrap": "^0.30.10",
     "react-burger-menu": "^2.0.0",
     "react-dom": "^15.5.4",
+    "react-icons": "^2.2.3",
     "react-markdown": "^2.5.0",
     "react-render-html": "^0.1.6",
     "react-router-dom": "^4.1.1",
