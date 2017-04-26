@@ -21,8 +21,8 @@ class Projects extends Component {
     this.atomifyReadmeUrl = "https://raw.githubusercontent.com/jaebradley/atomify/master/README.md";
   }
 
-  fetchMarkdown(markdownUrl) {
-    return rp(markdownUrl)
+  fetchHtml(url) {
+    return rp(url)
       .then(markdown => this.converter.makeHtml(markdown))
       .catch((err) => console.error(err));
   }
@@ -35,29 +35,30 @@ class Projects extends Component {
       </PageHeader>
       <Grid>
         <Row>
-          <Col xs={6} md={1}>
-          </Col>
+          <Col xs={6} md={1} />
           <Col xs={6} md={10}>
             <ListGroup className="project-descriptions">
               <Project
-                  src={UberCliImage} className="project-image"
+                  src={UberCliImage}
+                  className="project-image"
                   title="Uber CLI"
-                  body={this.fetchMarkdown(this.uberCliReadmeUrl)}
+                  body={this.fetchHtml(this.uberCliReadmeUrl)}
                   rounded />
               <Project
-                    src={NbaCliImage} className="project-image"
+                    src={NbaCliImage}
+                    className="project-image"
                     title="NBA CLI"
-                    body={this.fetchMarkdown(this.nbaCliReadmeUrl)}
+                    body={this.fetchHtml(this.nbaCliReadmeUrl)}
                     rounded />
               <Project
-                  src={AtomifyGif} className="project-image"
+                  src={AtomifyGif}
+                  className="project-image"
                   title="Atomify"
-                  body={this.fetchMarkdown(this.atomifyReadmeUrl)}
+                  body={this.fetchHtml(this.atomifyReadmeUrl)}
                   rounded />
             </ListGroup>
           </Col>
-          <Col xs={6} md={1}>
-          </Col>
+          <Col xs={6} md={1} />
         </Row>
       </Grid>
     </div>
