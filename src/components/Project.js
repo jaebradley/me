@@ -20,11 +20,11 @@ class Project extends Component {
   render = () => (
     <div>
       <h2 className="project-title">
-        {this.props.title}
+        <a href={this.props.src} target="__blank">{this.props.title}</a>
       </h2>
       <ListGroupItem>
         <Image
-          src={this.props.src}
+          src={this.props.imageSrc}
           className="project-image"
           onClick={this.openModal.bind(this)}
           rounded />

@@ -35,17 +35,20 @@ class Projects extends Component {
           <Col xs={6} md={10}>
             <ListGroup className="project-descriptions">
               <Project
-                src={UberCliImage}
+                imageSrc={UberCliImage}
+                src="https://github.com/jaebradley/uber-cli"
                 title="Uber CLI"
                 body={this.fetchHtml(this.uberCliReadmeUrl)}
                 rounded />
               <Project
-                src={NbaCliImage}
+                imageSrc={NbaCliImage}
+                src="https://github.com/jaebradley/nba-cli"
                 title="NBA CLI"
                 body={this.fetchHtml(this.nbaCliReadmeUrl)}
                 rounded />
               <Project
-                src={AtomifyGif}
+                imageSrc={AtomifyGif}
+                src="https://github.com/jaebradley/atomify"
                 title="Atomify"
                 body={this.fetchHtml(this.atomifyReadmeUrl)}
                 rounded />
