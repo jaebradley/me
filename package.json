@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "marked": "^0.3.6",
-    "mz": "^2.6.0",
     "react": "^15.5.4",
     "react-bootstrap": "^0.30.10",
     "react-burger-menu": "^2.0.0",
@@ -14,7 +12,8 @@
     "react-render-html": "^0.1.6",
     "react-router-dom": "^4.1.1",
     "request": "^2.81.0",
-    "request-promise": "^4.2.0"
+    "request-promise": "^4.2.0",
+    "showdown": "^1.6.4"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
