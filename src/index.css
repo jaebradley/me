@@ -16,10 +16,6 @@ body {
   margin: auto;
 }
 
-.page-header {
-  text-align: center;
-}
-
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
@@ -68,6 +64,23 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
+.menu-item {
+  font-size: 24px;
+  line-height: 2;
+  vertical-align: middle;
+  color: black;
+}
+
+.menu-icon {
+  font-size: 30px;
+  margin-right: 10px;
+  fill: black;
+}
+
+.page-header {
+  text-align: center;
+}
+
 .project-image {
   max-height: 500px;
   max-width: 500px;
@@ -82,17 +95,4 @@ body {
 .project-details img {
   max-height: 100%;
   max-width: 100%;
-}
-
-.menu-item {
-  font-size: 24px;
-  line-height: 2;
-  vertical-align: middle;
-  color: black;
-}
-
-.menu-icon {
-  font-size: 30px;
-  margin-right: 10px;
-  fill: black;
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PageHeader, Grid, Row, Col, ListGroup } from 'react-bootstrap';
+import { Grid, Row, Col, ListGroup } from 'react-bootstrap';
 import rp from 'request-promise';
 import showdown from 'showdown';
 

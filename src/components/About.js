@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import { PageHeader, Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
 import CenteredPageHeader from './CenteredPageHeader';
-import ContactBar from './ContactBar';
 import JaeImage from '../images/jae.png';
-import Menu from './Menu';
 
 class About extends Component {
 
@@ -31,14 +29,11 @@ class About extends Component {
               Avid sports fan (particularly the NBA).
             </ListGroupItem>
             <ListGroupItem>
-              Once finished eleven soups at Olive Garden's Unlimited Soup, Salads, and Breadsticks Lunch Deal.
+              Once downed eleven soups at Olive Garden.
             </ListGroupItem>
           </ListGroup>
         </Col>
         <Col xsHidden md={4} />
-      </Row>
-      <Row>
-        <ContactBar />
       </Row>
     </Grid>
   );
