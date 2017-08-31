@@ -16,6 +16,7 @@ class App extends Component {
       <div id="outer-container">
         <Menu outerContainerId={"outer-container"} pageWrapId={"page-wrap"} />
         <main id="page-wrap">
+          <Route path="/" component={About} />
           <Route path="/about" component={About} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
