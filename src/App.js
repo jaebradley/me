@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
-  Route
+  Route,
+  Redirect,
+  Switch
 } from 'react-router-dom';
 
-import './App.css';
 import About from './components/About';
-import Contact from './components/Contact';
 import Projects from './components/Projects';
 import Menu from './components/Menu';
+
+import './App.css';
 
 class App extends Component {
   render = () => (
@@ -16,10 +18,11 @@ class App extends Component {
       <div id="outer-container">
         <Menu outerContainerId={"outer-container"} pageWrapId={"page-wrap"} />
         <main id="page-wrap">
-          <Route path="/" component={About} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contact" component={Contact} />
+          <Switch>
+            <Route exact path="/about" component={About} />
+            <Route exact path="/projects" component={Projects} />
+            <Redirect to="/about" />
+          </Switch>
         </main>
       </div>
     </Router>
