@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { push as BurgerMenu } from 'react-burger-menu';
-import { PageHeader, Image, Grid, Row, Col } from 'react-bootstrap';
+import { PageHeader, Image } from 'react-bootstrap';
 import GoFileDirectory from 'react-icons/lib/go/file-directory';
 import MdPerson from 'react-icons/lib/md/person';
 import TiContact from 'react-icons/lib/ti/contacts';

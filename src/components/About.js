@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { PageHeader, Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
+import { Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
 import CenteredPageHeader from './CenteredPageHeader';
 import JaeImage from '../images/jae.png';
 
