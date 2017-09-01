@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { push as BurgerMenu } from 'react-burger-menu';
-import { PageHeader, Image, Grid, Row, Col } from 'react-bootstrap';
+import { PageHeader, Image } from 'react-bootstrap';
 import GoFileDirectory from 'react-icons/lib/go/file-directory';
 import MdPerson from 'react-icons/lib/md/person';
-import TiContact from 'react-icons/lib/ti/contacts';
 
 import JaeImage from '../images/jae.png';
 
@@ -18,9 +17,6 @@ class Menu extends Component {
       </div>
       <div>
         <GoFileDirectory className="menu-icon"/><a id="projects" className="menu-item" href="/projects">Projects</a>
-      </div>
-      <div>
-        <TiContact className="menu-icon"/><a id="contact" className="menu-item" href="/contact">Contact</a>
       </div>
     </BurgerMenu>
   );
