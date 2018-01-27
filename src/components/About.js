@@ -3,7 +3,7 @@ import { Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap
 
 import CenteredPageHeader from './CenteredPageHeader';
 import ContactBar from './ContactBar';
-import AboutImage from '../images/jae.png';
+import ProfilePicture from './ProfilePicture';
 
 const About = () => (
   <div>
@@ -12,11 +12,7 @@ const About = () => (
         <Row>
           <Col xsHidden md={4} />
           <Col xs={6} md={4}>
-            <Image
-              circle
-              className='about-image'
-              src={AboutImage}
-            />
+            <ProfilePicture />
           </Col>
           <Col xsHidden md={4} />
         </Row>
