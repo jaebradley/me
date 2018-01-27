@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
 import { Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
+
 import CenteredPageHeader from './CenteredPageHeader';
-import JaeImage from '../images/jae.png';
 import ContactBar from './ContactBar';
+import AboutImage from '../images/jae.png';
 
-class About extends Component {
-
-  render = () => (
-    <div>
+const About = () => (
+  <div>
       <Grid>
-        <CenteredPageHeader header={"About"} />
+        <CenteredPageHeader header={'About'} />
         <Row>
           <Col xsHidden md={4} />
           <Col xs={6} md={4}>
-            <Image src={JaeImage} circle className="about-image"/>
+            <Image
+              circle
+              className='about-image'
+              src={AboutImage}
+            />
           </Col>
           <Col xsHidden md={4} />
         </Row>
         <Row>
           <Col xsHidden md={4} />
           <Col xs={6} md={4}>
-            <ListGroup className="about-description">
+            <ListGroup className='about-description'>
               <ListGroupItem>
                 Bowdoin College graduate
               </ListGroupItem>
@@ -40,7 +43,6 @@ class About extends Component {
       </Grid>
       <ContactBar />
     </div>
-  );
-}
+);
 
 export default About;
