@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col, ListGroup, ListGroupItem, Image } from 'react-bootstrap';
+import React from 'react';
+import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
 
 import CenteredPageHeader from './CenteredPageHeader';
 import ContactBar from './ContactBar';
