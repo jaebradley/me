@@ -25,16 +25,13 @@ const About = () => (
           <Col xs={6} md={4}>
             <ListGroup className='about-description'>
               <ListGroupItem>
-                Bowdoin College graduate
-              </ListGroupItem>
-              <ListGroupItem>
                 Boston-based backend software engineer.
               </ListGroupItem>
               <ListGroupItem>
                 Avid sports fan (particularly the NBA).
               </ListGroupItem>
               <ListGroupItem>
-                Once downed eleven soups at Olive Garden.
+                Once ate eleven soups at Olive Garden.
               </ListGroupItem>
             </ListGroup>
           </Col>
