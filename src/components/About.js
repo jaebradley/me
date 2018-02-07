@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Row, Col, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 
 import CenteredPageHeader from './CenteredPageHeader';
 import ContactBar from './ContactBar';
@@ -7,7 +7,6 @@ import ProfilePicture from './ProfilePicture';
 
 const About = () => (
   <div>
-      <Grid>
         <CenteredPageHeader header={'About'} />
         <Row>
           <Col xsHidden md={4} />
@@ -33,7 +32,6 @@ const About = () => (
           </Col>
           <Col xsHidden md={4} />
         </Row>
-      </Grid>
       <ContactBar />
     </div>
 );

@@ -1,10 +1,10 @@
 import React from 'react';
-import { Image } from 'react-bootstrap';
+import { Media } from 'reactstrap';
 
 import image from '../images/jae.png';
 
 const ProfilePicture = () => (
-  <Image
+  <Media
     circle
     className='about-image'
     src={image}

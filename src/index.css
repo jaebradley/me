@@ -79,6 +79,7 @@ body {
 
 .page-header {
   text-align: center;
+  padding: 20px 0px;
 }
 
 .project-image {
@@ -95,4 +96,9 @@ body {
 .project-details img {
   max-height: 100%;
   max-width: 100%;
+}
+
+.menu-avatar {
+  margin: 0 auto;
+  width: 33%;
 }

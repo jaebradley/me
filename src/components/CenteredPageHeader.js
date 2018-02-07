@@ -1,15 +1,15 @@
 import React from 'react';
-import { PageHeader, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'reactstrap';
 
 const CenteredPageHeader = ({ header }) => (
   <Row>
-    <Col xsHidden md={4} />
+    <Col md={4} />
     <Col xs={6} md={4}>
-      <PageHeader className='page-header'>
+      <h2 className='page-header'>
         {header}
-      </PageHeader>
+      </h2>
     </Col>
-    <Col xsHidden md={4} />
+    <Col md={4} />
   </Row>
 );
 
