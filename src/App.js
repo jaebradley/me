@@ -21,8 +21,8 @@ class App extends Component {
       <div id="outer-container">
         <main id="page-wrap">
           <Switch>
-            <Route exact path="/projects" component={Projects} />
-            <Redirect to="/projects" />
+            <Route exact path="/" component={Projects} />
+            <Redirect to="/" />
           </Switch>
         </main>
       </div>
