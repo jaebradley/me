@@ -2,23 +2,7 @@ import React from 'react';
 import { push as BurgerMenu } from 'react-burger-menu';
 import { ListGroup, ListGroupItem, ListGroupItemText } from 'reactstrap';
 import UserAvatar from 'react-user-avatar';
-import SocialMediaBar from 'react-social-media-bar';
-
-const MINIMAL_ICONS = [
-  {
-    media: 'instagram',
-    link: 'https://instagram.com/rahrang'
-  },
-  {
-    media: 'github',
-    link: 'https://github.com/rahrang'
-  },
-  {
-    media: 'linkedin',
-    link: 'https://linkedin.com/in/rahrang'
-  }
-];
-
+import { ContactInformation, Service, SERVICE_TYPE, Email, FONT_AWESOME_SIZE } from 'react-contact-information';
 
 const Menu = ({ pageWrapId, outerContainerId }) => (
   <BurgerMenu pageWrapId={pageWrapId} outerContainerId={outerContainerId}>
@@ -45,27 +29,14 @@ const Menu = ({ pageWrapId, outerContainerId }) => (
         </ListGroupItemText>
       </ListGroupItem>
     </ListGroup>
-    <SocialMediaBar
-      className='social-media-bar'
-      bgColor={'#289089'}
-      icons={MINIMAL_ICONS}
-      iconOpacity={0.75}
-      iconSize={'1.5em'}
-      hoverColor={'#895FAD'}
-      hoverOpacity={0.9}
-      margin={{
-        top: '10px',
-        left: '10px',
-        right: '10px',
-        bottom: '12px'
-      }}
-      padding={{
-        top: '3px',
-        left: '2px',
-        right: '2px',
-        bottom: '3px'
-      }}
-    />
+    <footer className='menu-footer'>
+      <ContactInformation className='menu-contact-information' size={FONT_AWESOME_SIZE.ONE} rowLength={4}>
+        <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.GITHUB} />
+        <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.LINKEDIN} />
+        <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.TWITTER} />
+        <Email to={'jae.bradley@gmail'} />
+      </ContactInformation>
+    </footer>
   </BurgerMenu>
 );
 

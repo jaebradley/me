@@ -8,6 +8,7 @@
     "prop-types": "^15.6.0",
     "react": "^15.5.4",
     "react-burger-menu": "^2.0.0",
+    "react-contact-information": "^1.0.0",
     "react-dom": "^15.5.4",
     "react-icons": "^2.2.3",
     "react-markdown": "^2.5.0",

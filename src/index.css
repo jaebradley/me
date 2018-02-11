@@ -8,7 +8,7 @@ body {
 
 .about-description {
   font-size: 16px;
-  margin-top: 10px;
+  margin-top: 50%;
 }
 
 .about-image {
@@ -101,4 +101,19 @@ body {
 .menu-avatar {
   margin: 0 auto;
   width: 33%;
+}
+
+.menu-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding-bottom: 25px;
 }

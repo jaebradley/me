@@ -2,24 +2,9 @@ import React, { Component } from 'react';
 import { Container } from 'reactstrap';
 import CenteredPageHeader from './CenteredPageHeader';
 import { GitHubProjects, GitHubRepository } from 'github-portfolio-component';
-import ContactBar from './ContactBar';
-import Menu from './Menu';
-import SocialMediaBar from 'react-social-media-bar';
+import { ContactInformation, Service, SERVICE_TYPE, Email, FONT_AWESOME_SIZE } from 'react-contact-information';
 
-const MINIMAL_ICONS = [
-  {
-    media: 'instagram',
-    link: 'https://instagram.com/rahrang'
-  },
-  {
-    media: 'github',
-    link: 'https://github.com/rahrang'
-  },
-  {
-    media: 'linkedin',
-    link: 'https://linkedin.com/in/rahrang'
-  }
-];
+import Menu from './Menu';
 
 class Projects extends Component {
   render() {
@@ -36,6 +21,14 @@ class Projects extends Component {
             <GitHubRepository name='http-status-identifier-cli' description='CLI for HTTP status meanings' />
             <GitHubRepository name='github-searcher-cli' description='CLI for searching GitHub' />
           </GitHubProjects>
+          <footer className='footer'>
+            <ContactInformation className='contact-information' size={FONT_AWESOME_SIZE.TWO} rowLength={4}>
+              <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.GITHUB} />
+              <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.LINKEDIN} />
+              <Service accountIdentifier='jaebradley' type={SERVICE_TYPE.TWITTER} />
+              <Email to={'jae.bradley@gmail'} />
+            </ContactInformation>
+          </footer>
         </Container>
       </div>
     );
