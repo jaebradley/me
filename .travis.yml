@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  directories:
+    - ~/.npm
+notifications:
+  email: false
+node_js:
+  - '9'
+  - '8'
+after_success:
+branches:
+  except:
+    - /^v\d+\.\d+\.\d+$/

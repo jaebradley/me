@@ -1,6 +1,6 @@
 {
   "name": "me",
-  "version": "0.1.0",
+  "version": "0.0.0-development",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.0.0",
@@ -32,13 +32,21 @@
     "husky": "^0.14.3",
     "jest": "^22.1.4",
     "eslint-plugin-compat": "^2.2.0",
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "travis-deploy-once": "^4.3.4",
+    "semantic-release": "^12.4.1"
   },
   "scripts": {
     "build": "react-scripts build",
     "eject": "react-scripts eject",
     "flow": "flow",
     "start": "react-scripts start",
-    "test": "react-scripts test --env=jsdom"
+    "test": "react-scripts test --env=jsdom",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaebradley/me.git"
   }
 }
