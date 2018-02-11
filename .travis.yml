@@ -7,7 +7,7 @@ notifications:
 node_js:
   - '9'
   - '8'
-after_success:
+script:
   - if [ "$TRAVIS_BRANCH" = "master" -a "$TRAVIS_PULL_REQUEST" = "false" ]; then npm run predeploy && npm run deploy; fi
 branches:
   except:
