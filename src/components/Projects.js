@@ -20,6 +20,12 @@ class Projects extends Component {
             <GitHubRepository name='getmethefuckthere' description='Google Maps CLI' />
             <GitHubRepository name='http-status-identifier-cli' description='CLI for HTTP status meanings' />
             <GitHubRepository name='github-searcher-cli' description='CLI for searching GitHub' />
+            <GitHubRepository name='jaeurls' description='URL shortener that uses my first name as a prefix' />
+            <GitHubRepository name='urban-dictionary-cli' description='CLI for Urban Dictionary definitions' />
+            <GitHubRepository name='flix' description='CLI for movie and theather information' />
+            <GitHubRepository name='rotten_tomatoes_cli' description='Search movies and TV shows on Rotten Tomatoes from the command line' />
+            <GitHubRepository name='stock_ticker_identifier' description="GraphQL API that maps a company name to it's stock ticker" />
+            <GitHubRepository name='github-portfolio-component' description='React component for showcasing GitHub projects' />
           </GitHubProjects>
           <footer className='footer'>
             <ContactInformation className='contact-information' size={FONT_AWESOME_SIZE.TWO} rowLength={4}>
