@@ -2,6 +2,7 @@
   "name": "me",
   "version": "0.0.0-development",
   "private": true,
+  "homepage": "http://jaebradley.github.io/me",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "github-portfolio-component": "^1.1.1",
@@ -28,18 +29,21 @@
     "codecov": "^3.0.0",
     "eslint": "^4.16.0",
     "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-compat": "^2.2.0",
     "eslint-plugin-import": "^2.8.0",
+    "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "jest": "^22.1.4",
-    "eslint-plugin-compat": "^2.2.0",
     "react-scripts": "0.9.5",
-    "travis-deploy-once": "^4.3.4",
-    "semantic-release": "^12.4.1"
+    "semantic-release": "^12.4.1",
+    "travis-deploy-once": "^4.3.4"
   },
   "scripts": {
     "build": "react-scripts build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject",
     "flow": "flow",
+    "predeploy": "npm run build",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "travis-deploy-once": "travis-deploy-once",
