@@ -1,18 +1,21 @@
-import React, { Component } from 'react';
-import { PageHeader, Row, Col } from 'react-bootstrap';
+import React from 'react';
+import { Row, Col } from 'reactstrap';
+import PropTypes from 'prop-types';
 
-class CenteredPageHeader extends Component {
-  render = () => (
-    <Row>
-      <Col xsHidden md={4} />
-      <Col xs={6} md={4}>
-        <PageHeader className="page-header">
-          {this.props.header}
-        </PageHeader>
-      </Col>
-      <Col xsHidden md={4} />
-    </Row>
-  );
-}
+const CenteredPageHeader = ({ header }) => (
+  <Row>
+    <Col md={4} />
+    <Col xs={6} md={4}>
+      <h2 className='page-header'>
+        {header}
+      </h2>
+    </Col>
+    <Col md={4} />
+  </Row>
+);
+
+CenteredPageHeader.propTypes = {
+  header: PropTypes.string.isRequired,
+};
 
 export default CenteredPageHeader;
