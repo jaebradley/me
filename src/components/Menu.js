@@ -3,6 +3,7 @@ import { push as BurgerMenu } from 'react-burger-menu';
 import { ListGroup, ListGroupItem, ListGroupItemText } from 'reactstrap';
 import UserAvatar from 'react-user-avatar';
 import { ContactInformation, Service, SERVICE_TYPE, Email, FONT_AWESOME_SIZE } from 'react-contact-information';
+import PropTypes from 'prop-types';
 
 const Menu = ({ pageWrapId, outerContainerId }) => (
   <BurgerMenu pageWrapId={pageWrapId} outerContainerId={outerContainerId}>
@@ -39,5 +40,10 @@ const Menu = ({ pageWrapId, outerContainerId }) => (
     </footer>
   </BurgerMenu>
 );
+
+Menu.propTypes = {
+  pageWrapId: PropTypes.string.isRequired,
+  outerContainerId: PropTypes.string.isRequired,
+};
 
 export default Menu;

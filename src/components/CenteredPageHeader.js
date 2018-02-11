@@ -1,5 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap';
+import PropTypes from 'prop-types';
 
 const CenteredPageHeader = ({ header }) => (
   <Row>
@@ -12,5 +13,9 @@ const CenteredPageHeader = ({ header }) => (
     <Col md={4} />
   </Row>
 );
+
+CenteredPageHeader.propTypes = {
+  header: PropTypes.string.isRequired,
+};
 
 export default CenteredPageHeader;
