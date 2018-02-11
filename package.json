@@ -8,7 +8,7 @@
     "prep": [
       "build"
     ],
-    "noprompt": false
+    "noprompt": true
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
