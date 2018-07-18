@@ -1,4 +1,47 @@
 {
-  "presets": ["es2017", "react"],
-  "plugins": ["react-hot-loader/babel"]
+  "presets": [
+    "@babel/env",
+    "@babel/react"
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose" : true }],
+    "react-hot-loader/babel",
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/core",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "tree-shaking-mui-core"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/core/styles",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "tree-shaking-mui-styles"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/core/colors",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "tree-shaking-mui-colors"
+    ],
+    [
+      "babel-plugin-import",
+      {
+        "libraryName": "@material-ui/icons",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "tree-shaking-mui-icons"
+    ]
+  ]
 }

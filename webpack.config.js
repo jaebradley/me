@@ -5,18 +5,18 @@ const config = {
   entry: [
     'webpack/hot/only-dev-server',
     'react-hot-loader/patch',
-    './src/index.js'
+    './src/index.js',
   ],
 
   devtool: 'inline-source-map',
 
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'js/bundle.js'
+    filename: 'js/bundle.js',
   },
 
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
   },
 
   devServer: {
@@ -24,15 +24,15 @@ const config = {
     inline: true,
     port: 9090,
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
   },
 
   module: {
     loaders: [
       {
-         test: /\.jsx?$/,
-         exclude: /node_modules/,
-         loaders: ['babel-loader'],
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loaders: ['babel-loader'],
       },
       {
         test: /\.html$/,
@@ -40,15 +40,15 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: [ 'style-loader', 'css-loader' ]
-      }
-    ]
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
 
   plugins: [
     new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ]
-}
+    new webpack.HotModuleReplacementPlugin(),
+  ],
+};
 
 module.exports = config;
