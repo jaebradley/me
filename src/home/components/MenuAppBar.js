@@ -24,7 +24,7 @@ import JAvatar from './JAvatar';
 
 const styles = {
   root: {
-    position: 'relative',
+    position: 'sticky',
   },
   toolbar: {
     display: 'flex',

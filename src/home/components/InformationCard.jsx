@@ -27,10 +27,8 @@ import JaeAvatar from './JaeAvatar';
 
 const styles = theme => ({
   card: {
-    width: '50%',
-    margin: '0 auto',
-    marginTop: 10,
-    marginBottom: 50,
+    width: '25%',
+    height: '50%',
   },
   media: {
     height: 0,
@@ -54,21 +52,11 @@ class InformationCard extends React.Component {
 
     return (
       <Card className={classes.card}>
-          <CardHeader
-            avatar={<JaeAvatar />}
-            title={header}
-            subheader={subheader}
-          />
           <CardMedia
             className={classes.media}
             image={imageLocation}
             title={imageTitle}
           />
-          <CardContent>
-            <Typography component="p">
-              { description }
-            </Typography>
-          </CardContent>
         </Card>
     );
   }
