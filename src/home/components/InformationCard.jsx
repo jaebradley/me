@@ -57,6 +57,11 @@ class InformationCard extends React.Component {
             image={imageLocation}
             title={imageTitle}
           />
+          <CardContent>
+            <Typography component="p">
+              { description }
+            </Typography>
+          </CardContent>
         </Card>
     );
   }

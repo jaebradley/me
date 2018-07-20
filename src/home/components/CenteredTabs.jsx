@@ -32,8 +32,8 @@ class CenteredTabs extends React.Component {
           textColor="primary"
           centered
         >
-          <Tab label="About" />
-          <Tab label="Contact" />
+          <Tab label="About" href="/" />
+          <Tab label="Contact" href="/contact" />
         </Tabs>
       </Paper>
     );

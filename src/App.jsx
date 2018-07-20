@@ -3,6 +3,6 @@ import { hot } from 'react-hot-loader';
 
 import Home from './home';
 
-const App = () => <div><Home /></div>;
+const App = () => <Home />
 
 export default hot(module)(App);
